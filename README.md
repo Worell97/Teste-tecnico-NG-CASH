@@ -77,6 +77,7 @@ Items que ficaram de fora por questões de tempo
 * Paginação das transações
 * Validaçêes de usuario e senha(3 numreos, simbolos, comprimento minimo etc...)
 * Conversão do backend para typescript(O desenvolvimento foi iniciado sem o uso do typescript por engano)
+* Correção do idioma(Partes em Ingles e partes em Português)
 
 
 
