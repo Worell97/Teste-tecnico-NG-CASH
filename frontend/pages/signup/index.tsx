@@ -6,6 +6,7 @@ import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import Link from 'next/link';
 import { StyledSubmitBtn } from '../../components/button/styles';
 import api from '../../services/api';
+import Router from 'next/router';
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
                 setUserName('');
                 setPassword('');
                 setRegistered(true);
+                setTimeout(() => Router.push('/'), 2000);
             })
         } catch (error: any) {
             let message = '';
@@ -58,9 +60,6 @@ export default function Home() {
                 <NewUser>
                     <NewUserContent>
                         <NewUserForm>
-                            <Link href="/">
-                                <FiArrowLeft size={16}/>
-                            </Link>  
                             <NewUserCenter>
                                 <NewUserP>{getHeaderText()}</NewUserP>                 
                             </NewUserCenter> 

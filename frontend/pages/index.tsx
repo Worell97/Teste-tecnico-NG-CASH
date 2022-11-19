@@ -14,14 +14,13 @@ export default function Home() {
   useEffect(() => {
     let connectedAccount = localStorage.getItem('accountId') || '';
     let accountToken = localStorage.getItem(connectedAccount);
-    window.addEventListener('storage', storageEventHandler, false);
     setToken(accountToken || '');
   },[]);
  
   function storageEventHandler() {
     let connectedAccount = localStorage.getItem('accountId') || '';
     setToken(localStorage.getItem(connectedAccount) || '')
-  }
+  };
   
   return (
     <>
